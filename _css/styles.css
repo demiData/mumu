@@ -1,0 +1,109 @@
+/*-------------------------------------
+| Fonts
+-------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900);
+
+/*-------------------------------------
+| Clearfix
+-------------------------------------*/
+.cf:before, .cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+/*-------------------------------------
+| Box Sizing
+-------------------------------------*/
+* {
+	box-sizing: border-box;
+}
+/*-------------------------------------
+| core
+-------------------------------------*/
+body { 
+	background-color: #2BAED3; 
+	font-family: 'Roboto', sans-serif;
+}
+#container {
+	width: 100%;
+	max-width: 960px;
+    margin: auto;
+	background-color: #eee;
+}
+h1 { font-weight: 900; margin: 0px; }
+h2, h3 { font-weight: 700; margin: 0px;  color: rgba(0,0,0,.5); }
+p { font-weight: 400; color: rgba(0,0,0,.5); margin: 0px 0px 15px; }
+
+/*-------------------------------------
+| parents
+-------------------------------------*/
+header#masthead 	{ background-color: #2EB0AF; padding: 50px 20px; font-size: 24px; text-align: center; }
+nav#mainmenu 		{ background-color: #81581D; padding: 20px; }
+#main 				{ width: 100%; background-color: #FFEEE0; padding: 20px; }
+footer#closing 		{ background-color: #B07828; padding: 20px; font-size: 12px; }
+
+/*-------------------------------------
+| Nav
+-------------------------------------*/
+nav#mainmenu { text-align: center; }
+nav#mainmenu a { 
+	display: inline-block; 
+	width: 150px;
+	line-height: 50px;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #071523; 
+	color: #fff;
+}
+nav#mainmenu a:hover { background-color: #130D04;  }
+
+
+/*-------------------------------------
+| content
+-------------------------------------*/
+#main article  	{ background-color: #FFF; padding: 20px; float: left; width: 65%; }
+#main aside  	{ background-color: #B07828; padding: 20px; float: left; width: 35%; }
+
+/*-------------------------------------
+| form
+-------------------------------------*/
+
+form {
+	width: 100%;
+}
+
+form ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+form ul li {
+	margin: 15px 0;
+}
+
+form label {
+	display: block;
+	font-size: 2em;
+}
+
+form input, textarea, select {
+	font-size: 2em;
+	padding: 5px;
+	border: #ccc 3px solid;
+	width: 100%;
+}
+
+.active {
+	color: #EB3529;
+}
+
+/*-------------------------------------
+| closing
+-------------------------------------*/
+footer#closing {}
+footer#closing .contact,
+footer#closing .copy {
+	width: 50%;
+	float: left;
+	padding: 10px;
+}
+footer#closing .copy { text-align: right; }
